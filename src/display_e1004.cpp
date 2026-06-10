@@ -20,7 +20,8 @@
 
 #include <Arduino.h>
 #include <SPI.h>
-#include <SPIFFS.h>
+#include <LittleFS.h>
+#define FS LittleFS
 #include <Preferences.h>
 #include <PNGdec.h>
 
@@ -266,7 +267,7 @@ void display_reset(void)
 
 uint8_t *display_read_file(const char *filename, int *file_size)
 {
-    File f = SPIFFS.open(filename, "r");
+    File f = FS.open(filename, "r");
     uint8_t *buffer;
 
     if (!f) {
