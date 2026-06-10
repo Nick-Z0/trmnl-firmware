@@ -161,9 +161,14 @@ enum WIFI_CONNECT_RETRY_TIME // Time to sleep before trying to connect to the Wi
 #define PIN_VBAT_SWITCH 40
 #define VBAT_SWITCH_LEVEL HIGH
 #define DEVICE_MODEL "reTerminal E1003"
+#elif defined(BOARD_SEEED_RETERMINAL_E1004)
+#define DEVICE_MODEL "reTerminal E1004"
+#define PIN_INTERRUPT 3        // KEY0 (green button)
+#define PIN_VBAT_SWITCH 21     // VBAT_EN load switch enable pin for battery voltage measurement
+#define VBAT_SWITCH_LEVEL HIGH // load switch enable pin active level
 #endif
 
-#if defined(BOARD_XIAO_EPAPER_DISPLAY) || defined(BOARD_SEEED_RETERMINAL_E1001) || defined(BOARD_SEEED_RETERMINAL_E1002)
+#if defined(BOARD_XIAO_EPAPER_DISPLAY) || defined(BOARD_SEEED_RETERMINAL_E1001) || defined(BOARD_SEEED_RETERMINAL_E1002) || defined(BOARD_SEEED_RETERMINAL_E1004)
 #define PIN_BATTERY 1
 #elif defined(BOARD_XTEINK_X4)
 #define PIN_BATTERY 0

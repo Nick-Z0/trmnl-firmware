@@ -151,6 +151,17 @@
    #define EPD_EN_PIN   11
    #define EPD_BUSY_PIN 13
    #define EPD_VCC_EN   21
+#elif defined (BOARD_SEEED_RETERMINAL_E1004)
+   // Pin definition for reTerminal E1004 (T133A01 13.3" 1200x1600 dual-chip Spectra 6)
+   #define EPD_SCK_PIN  7
+   #define EPD_MOSI_PIN 9
+   #define EPD_MISO_PIN 8
+   #define EPD_CS_PIN   10  // chip 0 (left half)
+   #define EPD_DC_PIN   11
+   #define EPD_CS1_PIN  2   // chip 1 (right half)
+   #define EPD_RST_PIN  38
+   #define EPD_BUSY_PIN 13
+   #define EPD_EN_PIN   12  // display power/enable
 #elif defined (BOARD_X_CLASS)
 // Parallel Eink devices don't explicitly define GPIO pins for the display here
 #else
