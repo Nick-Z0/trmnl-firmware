@@ -23,7 +23,8 @@
                 "0x1001"
             ]
         ],
-        "mcu": "esp32s3"
+        "mcu": "esp32s3",
+        "variant": "esp32s3"
     },
     "connectivity": [
         "bluetooth",

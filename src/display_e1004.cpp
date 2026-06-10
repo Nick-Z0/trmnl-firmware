@@ -16,6 +16,8 @@
 // (otg_*, enter_shipment_sleep, BQ27427_*, check_usb_power, ...) are guarded by
 // BOARD_TRMNL_X at their call sites and are therefore never referenced on E1004.
 
+#ifdef BOARD_SEEED_RETERMINAL_E1004
+
 #include <Arduino.h>
 #include <SPI.h>
 #include <SPIFFS.h>
@@ -309,7 +311,7 @@ void display_show_image(uint8_t *image_buffer, int data_size, bool bWait)
         // Logos / loading screens are G5-compressed bb_epaper bitmaps which the
         // GxEPD2 stack cannot decode.  Show a neutral white screen instead of
         // garbage so the device stays in a defined visual state.
-        Log_warning("E1004: non-PNG image (G5/BMP) not supported, clearing screen");
+        Log_error("E1004: non-PNG image (G5/BMP) not supported, clearing screen");
         display_reset();
         return;
     }
@@ -600,3 +602,6 @@ void Paint_DrawMultilineText(UWORD x_start, UWORD y_start, const char *message,
         display.print(line);
     }
 }
+
+#endif // BOARD_SEEED_RETERMINAL_E1004
+
