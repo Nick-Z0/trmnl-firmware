@@ -8,7 +8,7 @@
         "core": "esp32",
         "extra_flags": [
             "-DBOARD_HAS_PSRAM",
-            "-DARDUINO_ESP32_S3_N16R8",
+            "-DARDUINO_ESP32_S3_N32R8",
             "-DARDUINO_USB_MODE=1",
             "-DARDUINO_USB_CDC_ON_BOOT=1",
             "-DARDUINO_RUNNING_CORE=1",
@@ -41,11 +41,11 @@
         "arduino",
         "espidf"
     ],
-    "name": "ESP32-S3-WROOM-1-N16R8",
+    "name": "ESP32-S3-WROOM-1-N32R8",
     "upload": {
-        "flash_size": "16MB",
+        "flash_size": "32MB",
         "maximum_ram_size": 327680,
-        "maximum_size": 16777216,
+        "maximum_size": 33554432,
         "require_upload_port": true,
         "speed": 460800
     },

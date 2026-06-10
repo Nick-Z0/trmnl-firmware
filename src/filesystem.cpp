@@ -2,7 +2,7 @@
 #include <Arduino.h>
 #include <trmnl_log.h>
 
-#if defined (BOARD_X_CLASS)
+#if defined (BOARD_X_CLASS) || defined (BOARD_SEEED_RETERMINAL_E1004)
 #include <LittleFS.h>
 #define FS LittleFS
 #else

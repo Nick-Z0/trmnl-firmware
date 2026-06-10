@@ -1,0 +1,11 @@
+{
+  "name": "GxEPD2_T133A01",
+  "version": "1.0.0",
+  "description": "GxEPD2 driver for the T133A01 (13.3in, 1200x1600, Spectra 6) dual-chip ePaper panel as used on the Seeed reTerminal E1004.",
+  "keywords": "epaper, eink, gxepd2, t133a01, spectra6, reterminal, e1004",
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "dependencies": {
+    "zinggjm/GxEPD2": "^1.6.4"
+  }
+}

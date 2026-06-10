@@ -1,5 +1,5 @@
-# TRMNL Firmware
-
+# TRMNL Firmware (Inlcuding support for reTerminal E1004)
+## __HIGHLY EXPERIMENTAL - Mostly Vibe-Coded™__
 created for the [TRMNL](https://trmnl.com) e-ink display.
 
 ## **Algorithm block scheme**
